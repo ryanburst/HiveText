@@ -1,0 +1,10 @@
+{
+  "name": "HiveText",
+  "author": "WildGrue",
+  "version_number": "0.1.0",
+  "website_url": "",
+  "description": "The bees have something to say.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2202"
+  ]
+}
