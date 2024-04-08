@@ -45,9 +45,9 @@ this, you can provide text specific to a certain interaction **or** just random 
    > For Thunderstore Mod Manager, you can also install it through the Overwolf app store
    ![](https://i.imgur.com/HQLZFp4.png "Thunderstore Mod Manager Download")
 2. **Open the Mod Manager and search for "HiveText" under the Online
-   tab.
+   tab.**
 3. **Click the Download button to install the mod.**
-4. **Launch the game** with the "Start modded" option.
+4. **Launch the game** with the "**Start modded**" option.
 
 ## Configuration
 ### HiveText.cfg
