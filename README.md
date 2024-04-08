@@ -3,6 +3,12 @@
 The bees have something to say! This mod adds the ability to pull a random line of text from a list and use that instead
 of the built in text. The bees aren't just happy, "The bees are overjoyed!"
 
+`Version checks with itself. If installed on the server, it will kick clients who do not have it installed.`
+
+`This mod uses ServerSync, if installed on the server and all clients, it will sync all configs to client`
+
+`This mod uses a file watcher. If the configuration file is not changed with BepInEx Configuration Manager, but changed in the file directly on the server, upon file save, it will sync the changes to all clients.`
+
 ## Description
 
 The Hive Text mod adds a `.yml` configuration file that provides several options (list key) to list lines of text that can be pulled
@@ -15,12 +21,6 @@ uses `ServerSync`, you can change anything in the `.yml` file and it will be upd
 The Hive Text `.cfg` file contains mod options for enabling or disabling the use of random text for each interaction. If an interaction
 is enabled, but there is no corresponding list key in the `.yml` file, it will pull from the `GenericText` list key instead. By doing 
 this, you can provide text specific to a certain interaction **or** just random text.
-
-`Version checks with itself. If installed on the server, it will kick clients who do not have it installed.`
-
-`This mod uses ServerSync, if installed on the server and all clients, it will sync all configs to client`
-
-`This mod uses a file watcher. If the configuration file is not changed with BepInEx Configuration Manager, but changed in the file directly on the server, upon file save, it will sync the changes to all clients.`
 
 ## Installation Instructions
 
@@ -51,10 +51,14 @@ this, you can provide text specific to a certain interaction **or** just random 
 
 ## Configuration
 ### HiveText.cfg
+Enabling or displaying the different text lists can be done by manually entering this `.cfg` file or by using a [Configuration Manager](https://valheim.thunderstore.io/package/Azumatt/Official_BepInEx_ConfigurationManager/)
+
+![](https://i.imgur.com/E7gjCEV.png, "Configuration Manager")
+
 #### 1 - General
 |Name|Server Sync|Description|Default|
 |-----|----------|--------|-----|
-|Lock Configuration|Yes|If on, the configuration is locked and can be changed by server admins only.|On|
+|Lock Configuration|Yes|If on, the configuration is locked and can be changed by server admins only. Finally, force your friends to endure your bee jokes.|On|
 
 #### 2 - Enable Random Text
 |Name|Server Sync|Description|Default|
@@ -77,13 +81,15 @@ this, you can provide text specific to a certain interaction **or** just random 
 |AttackedText|Doesn't replace any existing text, but shows when you damage a beehive. Do you know how many times I've accidentally punched a hive making this mod? The bees do. And they don't forget.|
 |GenericText (default)|The fallback list. If any of the above options are enabled in the `.cfg` file, but don't exist in the `.yml` file, it will pull from here.|
 
-## Issues
-All issues can be reported on the [mod Github page](https://github.com/ryanburst/HiveText/issues). Or you can give me a buzz on Discord. Get it? That was a bee joke.
+## Issues / Suggestions
+All issues and/or suggestions can be reported on the [mod Github page](https://github.com/ryanburst/HiveText/issues). Or you can give me a buzz on Discord. Get it? That was a bee joke.
 
 ## Author Information
 ### WildGrue
 `STEAM:` https://steamcommunity.com/id/wildgrue/
+
 `GITHUB:` https://github.com/ryanburst/
+
 `Discord:` https://discordapp.com/users/212216967359234050
 
 ### Credits
