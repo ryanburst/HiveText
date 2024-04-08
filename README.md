@@ -22,17 +22,6 @@ this, you can provide text specific to a certain interaction **or** just random 
 
 `This mod uses a file watcher. If the configuration file is not changed with BepInEx Configuration Manager, but changed in the file directly on the server, upon file save, it will sync the changes to all clients.`
 
-
-### List Key Options
-- **SleepText**: Replaces "The bees are sleeping" text that shows at night or during a storm. Stop disturbing the bees.
-- **BiomeText**: Replaces "The bees don't like this biome." text that shows if you build the hive in a biome they don't like. Picky bees.
-- **SpaceText**: Replaces "The bees need more open space." text when there is too much overhead coverage. Let the sun shine!
-- **HappyText**: Replaces "The bees are happy." text when checking a beehive and none of the other conditions are met. Bee Ross says "Happy bees! Happy little bees!"
-- **ExtractedText**: Doesn't replace any existing text, but shows when you successfully pull honey from a hive. You need it more than them, right?
-- **AttackedText**: Doesn't replace any existing text, but shows when you damage a beehive. Do you know how many times I've accidentally punched a hive making this mod? The bees do. And they don't forget.
-- **GenericText** (default): The fallback list. If any of the above options are enabled in the `.cfg` file, but don't exist in the `.yml` file, it will pull from here. 
-
-
 ## Installation Instructions
 
 ### Manual Installation
@@ -61,48 +50,37 @@ this, you can provide text specific to a certain interaction **or** just random 
 4. **Launch the game** with the "Start modded" option.
 
 ## Configuration
-
+### HiveText.cfg
 #### 1 - General
+|Name|Server Sync|Description|Default|
+|-----|----------|--------|-----|
+|Lock Configuration|Yes|If on, the configuration is locked and can be changed by server admins only.|On|
 
-**Lock Configuration [Synced with Server]**
+#### 2 - Enable Random Text
+|Name|Server Sync|Description|Default|
+|-----|----------|--------|-----|
+|SleepText|Yes|Enable pulling random lines of text to replace the sleeping text.|Enabled|
+|BiomeText|Yes|Enable pulling random lines of text to replace the biome text.|Enabled|
+|FreespaceText|Yes|Enable pulling random lines of text to replace the freespace text.|Enabled|
+|HappyText|Yes|Enable pulling random lines of text to replace the happy text.|Enabled|
+|ExtractedText|Yes|Enable pulling random lines of text to when honey is extracted from the hive.|Enabled|
+|AttackedText|Yes|nable pulling random lines of text when a beehive takes damage from a player.|Enabled|
 
-* If on, the configuration is locked and can be changed by server admins only.
-    * Default Value: On
-
-**SleepText [Synced with Server]**
-
-* Enable pulling random lines of text to replace the sleeping text.
-    * Default Value: On
-
-**BiomeText [Synced with Server]**
-
-* Enable pulling random lines of text to replace the biome text.
-
-**FreespaceText [Synced with Server]**
-
-* Enable pulling random lines of text to replace the space text. 
-    * Default Value: On
-
-**HappyText [Synced with Server]**
-
-* Enable pulling random lines of text to replace the happy text. 
-    * Default Value: On
-
-**Extracted [Synced with Server]**
-
-* Enable pulling random lines of text to when honey is extracted from the hive. 
-    * Default Value: On
-
-**AttackedText [Synced with Server]**
-
-* Enable pulling random lines of text when a beehive takes damage from a player.
-    * Default Value: On 
+### HiveText.yml
+|List Key|Description|
+|---|---|
+|SleepText|Replaces "The bees are sleeping" text that shows at night or during a storm. Stop disturbing the bees.|
+|BiomeText|Replaces "The bees don't like this biome." text that shows if you build the hive in a biome they don't like. Picky bees.|
+|SpaceText|Replaces "The bees need more open space." text when there is too much overhead coverage. Let the sun shine!|
+|HappyText|Replaces "The bees are happy." text when checking a beehive and none of the other conditions are met. Bee Ross says "Happy bees! Happy little bees!"|
+|ExtractedText|Doesn't replace any existing text, but shows when you successfully pull honey from a hive. You need it more than them, right?|
+|AttackedText|Doesn't replace any existing text, but shows when you damage a beehive. Do you know how many times I've accidentally punched a hive making this mod? The bees do. And they don't forget.|
+|GenericText (default)|The fallback list. If any of the above options are enabled in the `.cfg` file, but don't exist in the `.yml` file, it will pull from here.|
 
 ## Author Information
-
 ### WildGrue
-
 `STEAM:` https://steamcommunity.com/id/wildgrue/
+`GITHUB:` https://github.com/ryanburst/
 
 ### Credits
 This mod was created using [Azumatt's](https://github.com/AzumattDev) Piece Manager [Mod Template](https://github.com/AzumattDev/PieceManagerModTemplate).
