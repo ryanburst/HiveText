@@ -1,4 +1,4 @@
-# Hive Text
+# HiveText
 
 The bees have something to say! This mod adds the ability to pull a random line of text from a list and use that instead
 of the built in text. The bees aren't just happy, "The bees are overjoyed!"
@@ -77,10 +77,14 @@ this, you can provide text specific to a certain interaction **or** just random 
 |AttackedText|Doesn't replace any existing text, but shows when you damage a beehive. Do you know how many times I've accidentally punched a hive making this mod? The bees do. And they don't forget.|
 |GenericText (default)|The fallback list. If any of the above options are enabled in the `.cfg` file, but don't exist in the `.yml` file, it will pull from here.|
 
+## Issues
+All issues can be reported on the [mod Github page](https://github.com/ryanburst/HiveText/issues). Or you can give me a buzz on Discord. Get it? That was a bee joke.
+
 ## Author Information
 ### WildGrue
 `STEAM:` https://steamcommunity.com/id/wildgrue/
 `GITHUB:` https://github.com/ryanburst/
+`Discord:` https://discordapp.com/users/212216967359234050
 
 ### Credits
 This mod was created using [Azumatt's](https://github.com/AzumattDev) Piece Manager [Mod Template](https://github.com/AzumattDev/PieceManagerModTemplate).
