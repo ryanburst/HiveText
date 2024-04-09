@@ -13,7 +13,7 @@ of the built in text. The bees aren't just happy, "The bees are overjoyed!"
 
 The Hive Text mod adds a `.yml` configuration file that provides several options (list key) to list lines of text that can be pulled
 randomly. Each list key corresponds to an in-game interaction with the `Beehive` prefab, with an additional `GenericText` list key 
-that can be used in the absense of another list key.
+that can be used in the absence of another list key.
 
 A few options have been provided for you in the default `.yml` config file that gets generated when you boot the game. Because this mod
 uses `ServerSync`, you can change anything in the `.yml` file and it will be updated even when the game has already been loaded.
